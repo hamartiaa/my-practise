@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Фон -->
+  <rect width="400" height="300" fill="#ecf0f1" rx="10" ry="10"/>
+  
+  <!-- Заголовок -->
+  <text x="200" y="50" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">О программе</text>
+  
+  <!-- Книга -->
+  <rect x="100" y="100" width="80" height="120" fill="#3498db"/>
+  <rect x="100" y="100" width="40" height="120" fill="#2980b9"/>
+  <line x1="140" y1="100" x2="140" y2="220" stroke="#333" stroke-width="2"/>
+  <line x1="110" y1="130" x2="130" y2="130" stroke="#fff" stroke-width="2"/>
+  <line x1="110" y1="150" x2="130" y2="150" stroke="#fff" stroke-width="2"/>
+  <line x1="110" y1="170" x2="130" y2="170" stroke="#fff" stroke-width="2"/>
+  <line x1="150" y1="130" x2="170" y2="130" stroke="#fff" stroke-width="2"/>
+  <line x1="150" y1="150" x2="170" y2="150" stroke="#fff" stroke-width="2"/>
+  <line x1="150" y1="170" x2="170" y2="170" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Лампочка (идея) -->
+  <circle cx="250" cy="140" r="30" fill="#f1c40f"/>
+  <path d="M250 170 L250 190 L240 190 L260 190 L250 190 Z" fill="#f39c12"/>
+  <path d="M250 100 L250 110" stroke="#333" stroke-width="3"/>
+  <path d="M290 140 L280 140" stroke="#333" stroke-width="3"/>
+  <path d="M210 140 L220 140" stroke="#333" stroke-width="3"/>
+  <path d="M275 115 L265 125" stroke="#333" stroke-width="3"/>
+  <path d="M225 115 L235 125" stroke="#333" stroke-width="3"/>
+  
+  <!-- Соединительная линия -->
+  <path d="M180 160 Q 215 160 220 160" stroke="#2ecc71" stroke-width="4" stroke-dasharray="8,4" fill="none"/>
+  
+  <!-- Текст -->
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">Образование и развитие</text>
+</svg> 

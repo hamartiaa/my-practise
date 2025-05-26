@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Фон -->
+  <rect width="400" height="300" fill="#f0f8ff" rx="10" ry="10"/>
+  
+  <!-- Заголовок -->
+  <text x="200" y="50" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">Наша команда</text>
+  
+  <!-- Первый человек -->
+  <circle cx="100" cy="150" r="25" fill="#3498db"/>
+  <rect x="87.5" y="175" width="25" height="60" fill="#3498db"/>
+  <line x1="87.5" y1="190" x2="65" y2="210" stroke="#3498db" stroke-width="8" stroke-linecap="round"/>
+  <line x1="112.5" y1="190" x2="135" y2="210" stroke="#3498db" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Второй человек -->
+  <circle cx="200" cy="150" r="25" fill="#e74c3c"/>
+  <rect x="187.5" y="175" width="25" height="60" fill="#e74c3c"/>
+  <line x1="187.5" y1="190" x2="165" y2="210" stroke="#e74c3c" stroke-width="8" stroke-linecap="round"/>
+  <line x1="212.5" y1="190" x2="235" y2="210" stroke="#e74c3c" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Третий человек -->
+  <circle cx="300" cy="150" r="25" fill="#2ecc71"/>
+  <rect x="287.5" y="175" width="25" height="60" fill="#2ecc71"/>
+  <line x1="287.5" y1="190" x2="265" y2="210" stroke="#2ecc71" stroke-width="8" stroke-linecap="round"/>
+  <line x1="312.5" y1="190" x2="335" y2="210" stroke="#2ecc71" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Соединительные линии -->
+  <line x1="125" y1="150" x2="175" y2="150" stroke="#888" stroke-width="3" stroke-dasharray="5,3"/>
+  <line x1="225" y1="150" x2="275" y2="150" stroke="#888" stroke-width="3" stroke-dasharray="5,3"/>
+</svg> 

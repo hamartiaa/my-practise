@@ -1,0 +1,382 @@
+/* Основные стили для сайта "Ментор МГПУ" */
+
+:root {
+  --primary-color: #0066cc;
+  --secondary-color: #003366;
+  --accent-color: #ff9900;
+  --light-bg: #f5f5f5;
+  --dark-text: #333333;
+  --light-text: #ffffff;
+  --font-main: 'Roboto', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--dark-text);
+  background-color: var(--light-bg);
+}
+
+/* Заголовок */
+header {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.logo a {
+  color: var(--light-text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin: 0;
+  height: 50px;
+}
+
+/* Навигация */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* Основной контент */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+/* Особые секции */
+.hero {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+  padding: 3rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 2rem auto;
+  display: block;
+}
+
+.hero h1 {
+  color: var(--light-text);
+  border: none;
+  position: relative;
+  z-index: 2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 1rem auto;
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+/* Карточки участников */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.member-card {
+  background-color: var(--light-bg);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img, .member-placeholder-image {
+  margin-top: 1.5rem;
+}
+
+.member-info {
+  padding: 1.5rem;
+}
+
+.member-info h3 {
+  margin-top: 0;
+}
+
+/* Журнал/блог */
+.journal-entry {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.journal-entry:last-child {
+  border-bottom: none;
+}
+
+.entry-date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Ресурсы */
+.resources-list {
+  list-style: none;
+}
+
+.resources-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.resources-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.resources-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.resources-list a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  
+  nav ul {
+    margin-top: 1rem;
+  }
+  
+  nav ul li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Изображения и медиа */
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.image-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Подвал */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Кнопка призыва к действию (CTA) */
+.cta-button {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.cta-button a {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--light-text);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.cta-button a:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Видео-контейнеры */
+.video-resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.video-item {
+  background-color: var(--light-bg);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.video-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.video-item p {
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Контактная информация */
+.contact-info {
+  list-style: none;
+  margin: 1rem 0;
+  padding-left: 0;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+} 
